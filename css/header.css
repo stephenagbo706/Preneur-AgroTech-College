@@ -1,0 +1,29 @@
+/* TOP NAV */
+#topnav{position:fixed;top:0;left:0;right:0;z-index:900;background:#fff;border-bottom:1px solid var(--border);height:var(--nav-h);transition:box-shadow .3s}
+#topnav.shadow{box-shadow:0 2px 20px rgba(0,0,0,.09)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:1160px;margin:0 auto;padding:0 1.5rem}
+.nav-logo{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+/* TODO: Replace logo image at assets/images/logo.png */
+.nav-logo-img{width:40px;height:40px;object-fit:contain}
+.nav-text-top{font-family:var(--serif);font-weight:700;font-size:.88rem;color:var(--dark);display:block;line-height:1.2}
+.nav-text-bot{font-size:.56rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gray);display:block}
+.nav-links{display:flex;align-items:center;gap:.15rem;list-style:none}
+.nav-links a{font-size:.75rem;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:#555;padding:.45rem .8rem;border-radius:3px;transition:color .2s,background .2s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:var(--red);background:var(--red-pale)}
+.nav-right{display:flex;align-items:center;gap:.8rem}
+.nav-search{width:34px;height:34px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.85rem;cursor:pointer;transition:background .2s}
+.nav-search:hover{background:var(--light)}
+.ham{display:none;flex-direction:column;gap:4px;padding:.4rem;background:none}
+.ham span{display:block;width:20px;height:2px;background:var(--dark);transition:all .3s;border-radius:1px}
+
+/* MOBILE DRAWER */
+.drawer{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;background:#fff;z-index:800;overflow-y:auto;padding:1rem 1.5rem;flex-direction:column}
+.drawer.open{display:flex}
+.drawer a{padding:.9rem 0;font-size:.95rem;font-weight:500;color:#333;border-bottom:1px solid var(--border);transition:color .2s}
+.drawer a:hover{color:var(--red)}
+
+/* BOTTOM NAV */
+#botnav{display:none;position:fixed;bottom:0;left:0;right:0;height:var(--bot-h);background:#fff;border-top:1px solid var(--border);z-index:900;flex-direction:row}
+.bn{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:.56rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--gray);cursor:pointer;transition:color .2s;padding:0 .2rem}
+.bn.active{color:var(--red)}
+.bn svg{width:19px;height:19px}

@@ -1,0 +1,43 @@
+<!-- HEADER COMPONENT -->
+<!-- TODO: Update logo, school name, and navigation labels -->
+<nav id="topnav">
+  <div class="nav-inner">
+    <a class="nav-logo" data-link="index.html" aria-label="PATC Home">
+      <img class="nav-logo-img" src="/assets/images/Patc.png" data-src="assets/images/Patc.png" alt="PATC Logo">
+      <div>
+        <!-- TODO: Update school name / tagline here -->
+        <span class="nav-text-top">Preneur AgroTech College</span>
+        <span class="nav-text-bot">PATC · Full-Cycle Ecosystem</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a data-page="home" data-link="index.html">Home</a></li>
+      <li><a data-page="programs" data-link="pages/programs.html">Programs</a></li>
+      <li><a data-page="how-it-works" data-link="pages/how-it-works.html">How It Works</a></li>
+      <li><a data-page="enterprise-lab" data-link="pages/enterprise-lab.html">Enterprise Lab</a></li>
+      <li><a data-page="partnerships" data-link="pages/partnerships.html">Partnerships</a></li>
+      <li><a data-page="about" data-link="pages/about.html">About</a></li>
+      <li><a data-page="insights" data-link="pages/insights.html">Insights</a></li>
+      <li><a data-page="contact" data-link="pages/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <!-- TODO: Hook up real search in js/search.js -->
+      <button class="nav-search" id="open-search" aria-label="Open search">🔍</button>
+      <a class="btn btn-red" style="font-size:.72rem;padding:.5rem 1.1rem;border-radius:4px" data-link="pages/apply.html">Apply Now</a>
+      <button class="ham" id="ham" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- SEARCH PANEL (Optional) -->
+<div class="search-panel" id="search-panel" aria-hidden="true">
+  <div class="search-box">
+    <h3>Search PATC</h3>
+    <!-- TODO: Replace placeholder search logic with your own -->
+    <input type="text" placeholder="Search programs, labs, insights...">
+    <div class="search-actions">
+      <button class="btn btn-outline-red" id="close-search">Close</button>
+      <button class="btn btn-red">Search</button>
+    </div>
+  </div>
+</div>

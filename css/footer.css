@@ -1,0 +1,13 @@
+footer{background:var(--dark);color:#fff;padding:4rem 0 2rem}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:3rem;margin-bottom:2rem}
+.fb .fl{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:#fff;display:block;margin-bottom:.2rem}
+.fb .fs{font-size:.55rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:1.2rem}
+.fb p{font-size:.8rem;color:rgba(255,255,255,.42);max-width:240px;line-height:1.7}
+.fcol h5{font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:.9rem}
+.fcol ul{list-style:none}
+.fcol ul li{margin-bottom:.55rem}
+.fcol ul li a{font-size:.8rem;color:rgba(255,255,255,.5);transition:color .2s}
+.fcol ul li a:hover{color:#fff}
+.fb2{display:flex;justify-content:space-between;align-items:center}
+.fb2 p{font-size:.7rem;color:rgba(255,255,255,.28)}
+.fb2 span{font-family:var(--serif);font-style:italic;font-size:.78rem;color:rgba(255,255,255,.28)}

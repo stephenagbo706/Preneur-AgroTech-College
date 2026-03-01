@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply | Preneur AgroTech College</title>
+  <link rel="icon" type="image/png" href="../assets/icons/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="../assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/icons/favicon.png">
+<link rel="shortcut icon" type="image/png" href="../assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/icons/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-root=".." data-page="apply">
+  <div id="site-header"></div>
+  <div id="site-menu"></div>
+
+  <main class="apply-page">
+    <!-- TODO: Update form fields, dates, and submission flow -->
+    <div style="background:#fff;border-bottom:1px solid var(--border);padding:.9rem 1.5rem;display:flex;align-items:center;justify-content:center;position:relative">
+      <a class="apply-back" data-link="index.html">←</a>
+      <div style="text-align:center">
+        <div class="apply-topbar-sub" id="apply-header-sub">APPLICATION</div>
+        <div class="apply-topbar-title" id="apply-header-title">Step 1 of 3</div>
+      </div>
+    </div>
+
+    <div class="apply-wrap" id="apply-form">
+      <!-- STEP 1 -->
+      <div class="apply-step active" id="as1">
+        <div class="step-prog">
+          <div class="sp-row">
+            <div class="sp-left">Step 1 of 3</div>
+            <div class="sp-right">Personal Information</div>
+          </div>
+          <div class="sp-bar"><div class="sp-fill" style="width:33%"></div></div>
+        </div>
+        <h1 style="font-size:clamp(1.7rem,5vw,2.5rem);margin-bottom:.6rem">Apply to join the<br>next cohort</h1>
+        <p style="color:var(--gray);font-size:.88rem;margin-bottom:2rem">This is a practical program designed to help you build real output. Fill in your details to begin your journey at Preneur Agro Tech College.</p>
+        <!-- TODO: Connect these fields to your backend or form provider -->
+        <div class="form-g"><label class="form-lbl">Full Name</label><input class="form-in" type="text" placeholder="Harvard S. Agrotech" id="f1-name"></div>
+        <div class="form-g"><label class="form-lbl">Email Address</label><input class="form-in" type="email" placeholder="name@example.com" id="f1-email"></div>
+        <div class="form-g"><label class="form-lbl">Phone / WhatsApp Number</label><input class="form-in" type="tel" placeholder="+ 234 (0708) 684-5789" id="f1-phone"></div>
+        <a class="btn btn-red btn-full btn-lg" style="margin-top:.5rem" href="#" onclick="gotoStep(2);return false">Continue to Program Selection →</a>
+        <div class="qd">
+          <div class="qd-title">Quick Details</div>
+          <div class="qd-row"><div class="qd-ico">📺</div><div><span class="qd-key">Format</span><span class="qd-val">Online + Practicum</span></div></div>
+          <div class="qd-row"><div class="qd-ico">⏱</div><div><span class="qd-key">Duration</span><span class="qd-val">6 Weeks Intensive</span></div></div>
+          <!-- TODO: Update start date -->
+          <div class="qd-row"><div class="qd-ico">📅</div><div><span class="qd-key">Start Date</span><span class="qd-val">October 15, 2024</span></div></div>
+        </div>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="apply-step" id="as2">
+        <div class="step-prog">
+          <div class="sp-row">
+            <div class="sp-left">Program & Goals</div>
+            <div class="sp-right" style="color:var(--red);font-weight:600">Step 2 of 3</div>
+          </div>
+          <div class="sp-bar"><div class="sp-fill" style="width:66%"></div></div>
+        </div>
+        <h2 style="font-size:clamp(1.5rem,4vw,2.2rem);margin-bottom:1.5rem">Select Your Track</h2>
+        <div id="track-list">
+          <div class="track-opt sel" onclick="pickTrack(this,'Full Circle L2B Cohort')">
+            <div class="to-text"><div class="tn">Full Circle L2B Cohort</div><div class="ts">Comprehensive farm-to-market entrepreneurship program for scale.</div></div>
+            <div class="to-radio"></div>
+          </div>
+          <div class="track-opt" onclick="pickTrack(this,'Value-Add & Packaging Accelerator')">
+            <div class="to-text"><div class="tn">Value-Add & Packaging</div><div class="ts">Focus on processing, branding, and packaging logistics for retail ready goods.</div></div>
+            <div class="to-radio"></div>
+          </div>
+          <div class="track-opt" onclick="pickTrack(this,'Agro-Trade & Distribution Track')">
+            <div class="to-text"><div class="tn">Agro-Trade & Distribution</div><div class="ts">Strategic trade networks and export-level distribution management.</div></div>
+            <div class="to-radio"></div>
+          </div>
+        </div>
+        <div class="form-g" style="margin-top:1.5rem">
+          <label class="form-lbl">Why This Track?</label>
+          <p style="font-size:.8rem;color:var(--gray);margin-bottom:.6rem">What do you hope to achieve through PATC? Tell us about your vision for building a real business pathway.</p>
+          <textarea class="form-in" placeholder="Describe your entrepreneurial goals..." id="f2-stmt"></textarea>
+        </div>
+        <div class="step-btns">
+          <button class="btn btn-outline-red" style="flex:1" onclick="gotoStep(1)">BACK</button>
+          <button class="btn btn-red" style="flex:2" onclick="gotoStep(3)">CONTINUE</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: REVIEW -->
+      <div class="apply-step" id="as3">
+        <div class="step-prog">
+          <div class="sp-row">
+            <div class="sp-left">Step 3: Review & Terms</div>
+            <div class="sp-right" style="background:var(--red-pale);color:var(--red);padding:.2rem .6rem;border-radius:4px;font-weight:600">3 of 3</div>
+          </div>
+          <div class="sp-bar"><div class="sp-fill" style="width:100%"></div></div>
+        </div>
+        <div class="rv-card">
+          <h3>Application Summary</h3>
+          <div class="rv-row"><div class="rv-k">Program</div><div class="rv-v">Preneur AgroTech (PATC)</div></div>
+          <div class="rv-row"><div class="rv-k">Cohort</div><div class="rv-v">Autumn Intake 2024</div></div>
+          <div class="rv-row"><div class="rv-k">Track</div><div class="rv-v" id="rv-track">Full Circle L2B Cohort</div></div>
+          <div class="rv-row"><div class="rv-k">Focus Area</div><div class="rv-v">Agri-Scale Operations</div></div>
+        </div>
+        <div class="sec-label" style="margin-bottom:.8rem">Included in Your Submission</div>
+        <ul class="checklist">
+          <li><div class="cl-chk">✓</div><div><strong>Product Selection</strong><br><span style="font-size:.78rem;color:var(--gray)">High-yield organic seasonal crops</span></div></li>
+          <li><div class="cl-chk">✓</div><div><strong>Production Plan</strong><br><span style="font-size:.78rem;color:var(--gray)">12-month cultivation cycle & rotation</span></div></li>
+          <li><div class="cl-chk">✓</div><div><strong>Cost Worksheet</strong><br><span style="font-size:.78rem;color:var(--gray)">Detailed Capex and Opex projections</span></div></li>
+        </ul>
+        <div class="cert">
+          <div class="cert-box" id="cbox" onclick="toggleCert()"></div>
+          <!-- TODO: Update enrollment terms and privacy policy links -->
+          <p>I certify that all information provided is accurate and I agree to the <a href="#">PATC Enrollment Terms</a> and <a href="#">Privacy Policy</a>.</p>
+        </div>
+        <a class="btn btn-red btn-full btn-lg" href="#" onclick="submitApply();return false">Submit Application →</a>
+        <div class="what-next" style="margin-top:1.5rem">
+          <div class="wn-title"><strong>What Happens Next?</strong></div>
+          <div class="wn-item"><div class="wn-num">1</div><p>Your application will be reviewed by our admissions panel within 5–7 business days.</p></div>
+          <div class="wn-item"><div class="wn-num">2</div><p>Shortlisted candidates will be invited for a virtual technical interview.</p></div>
+          <div class="wn-item"><div class="wn-num">3</div><p>Final selection announcements will be sent via email by mid-next month.</p></div>
+        </div>
+        <div style="margin-top:1rem;display:flex;justify-content:flex-start">
+          <button class="btn btn-outline-red" onclick="gotoStep(2)">← Back</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUCCESS PANEL -->
+    <div id="apply-success" class="apply-success" style="background:var(--green-dark)">
+      <div class="success-body" style="min-height:calc(100vh - var(--nav-h) - var(--bot-h) - 50px)">
+        <div class="success-ico">✓</div>
+        <h1>Application Received</h1>
+        <p>Thank you for your interest in joining the next PATC cohort. Our admissions team is reviewing your profile with care.</p>
+        <div class="success-ns">
+          <div class="sns-label">Next Steps</div>
+          <div class="sns-item"><div class="sns-num">1</div><p>Check your email for a detailed confirmation receipt.</p></div>
+          <div class="sns-item"><div class="sns-num">2</div><p>Expect a follow-up call from our team within 3–5 business days.</p></div>
+          <div class="sns-item"><div class="sns-num">3</div><p>Explore the Insights page for the latest industry perspectives.</p></div>
+        </div>
+        <div class="success-btns">
+          <a class="btn-green-fill" data-link="index.html">Back to Home</a>
+          <a class="btn-green-outline" data-link="pages/insights.html">Read Our Latest Insights</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../js/navigation.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/search.js"></script>
+</body>
+</html>
