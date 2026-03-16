@@ -42,7 +42,7 @@
         probe.style.opacity = '0';
         document.body.appendChild(probe);
         const fam = (getComputedStyle(probe).fontFamily || '').toLowerCase();
-        document.body.classList.toggle('fa-missing', !fam.includes('font awesome'));
+        document.body.classList.toggle('fa-ready', fam.includes('font awesome'));
         probe.remove();
       };
 

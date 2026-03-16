@@ -30,12 +30,13 @@ footer{background:var(--dark);color:#fff;padding:4rem 0 2rem}
   background:rgba(255,255,255,.08);
   transform:translateY(-1px);
 }
+.footer-socials i{display:none}
 .footer-socials .icon-fallback{
-  display:none;
+  display:inline-block;
   font-family:var(--sans);
   font-size:.7rem;
   font-weight:700;
   letter-spacing:.02em;
 }
-.fa-missing .footer-socials i{display:none}
-.fa-missing .footer-socials .icon-fallback{display:inline-block}
+.fa-ready .footer-socials i{display:inline-block}
+.fa-ready .footer-socials .icon-fallback{display:none}
