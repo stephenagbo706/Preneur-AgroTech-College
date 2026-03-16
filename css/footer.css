@@ -8,6 +8,34 @@ footer{background:var(--dark);color:#fff;padding:4rem 0 2rem}
 .fcol ul li{margin-bottom:.55rem}
 .fcol ul li a{font-size:.8rem;color:rgba(255,255,255,.5);transition:color .2s}
 .fcol ul li a:hover{color:#fff}
-.fb2{display:flex;justify-content:space-between;align-items:center}
+.fb2{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
 .fb2 p{font-size:.7rem;color:rgba(255,255,255,.28)}
 .fb2 span{font-family:var(--serif);font-style:italic;font-size:.78rem;color:rgba(255,255,255,.28)}
+.footer-socials{display:flex;gap:.7rem}
+.footer-socials a{
+  width:32px;
+  height:32px;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:50%;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:rgba(255,255,255,.75);
+  transition:all .2s;
+  font-size:.85rem;
+}
+.footer-socials a:hover{
+  color:#fff;
+  border-color:rgba(255,255,255,.7);
+  background:rgba(255,255,255,.08);
+  transform:translateY(-1px);
+}
+.footer-socials .icon-fallback{
+  display:none;
+  font-family:var(--sans);
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.02em;
+}
+.fa-missing .footer-socials i{display:none}
+.fa-missing .footer-socials .icon-fallback{display:inline-block}
