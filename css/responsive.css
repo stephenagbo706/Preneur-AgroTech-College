@@ -1,7 +1,8 @@
 @media(max-width:1024px){
   .eco-grid,.diff-grid{grid-template-columns:repeat(2,1fr)}
   .fg{grid-template-columns:1fr 1fr;gap:2rem}
-  .two-col,.founder-grid,.mv-grid,.insights-layout,.pdb-inner{grid-template-columns:1fr}
+  .two-col,.mv-grid,.insights-layout,.pdb-inner{grid-template-columns:1fr}
+  .founder-grid{grid-template-columns:repeat(2,1fr)}
   .pdb-sticky{position:static}
   .re-grid,.lab-photo-cards{grid-template-columns:1fr 1fr}
   .partner-types-full{grid-template-columns:1fr 1fr}
@@ -15,6 +16,7 @@
   main{padding-bottom:calc(var(--bot-h) + .5rem)}
   .diff-grid,.eco-grid,.prog-grid,.if-grid,.re-grid,.lab-photo-cards,.partner-types-full,.pt-grid,.st-grid{grid-template-columns:1fr}
   .fg{grid-template-columns:1fr}
+  .founder-grid{grid-template-columns:1fr}
   footer{padding-bottom:calc(var(--bot-h) + 1.5rem)}
   .hero-content{padding:2rem 1.5rem 4.5rem}
   .l2b-arr{display:none}

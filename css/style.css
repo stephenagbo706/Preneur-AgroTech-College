@@ -204,10 +204,21 @@ main{padding-top:var(--nav-h);padding-bottom:calc(var(--bot-h) + .5rem)}
 .mv{background:#fff;border:1px solid var(--border);border-radius:8px;padding:1.8rem}
 .agrotech-box{background:var(--dark);color:#fff;border-radius:10px;padding:2rem;margin-top:2rem}
 .agrotech-box h3{color:#fff}
-.founder-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.founder-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
 .fc{background:#fff;border:1px solid var(--border);border-radius:10px;overflow:hidden}
 /* TODO: Replace founder photos in assets/images/ */
-.fc-photo{height:220px;object-fit:cover}
+.fc-photo{
+  width:100%;
+  max-width:400px;
+  aspect-ratio:1/1;
+  height:auto;
+  object-fit:cover;
+  object-position:center 15%;
+  background:var(--light);
+  display:block;
+  margin:0 auto;
+  border-radius:50%;
+}
 .fc-top{padding:1.2rem 1.5rem;border-bottom:1px solid var(--border)}
 .fc-role{font-size:.75rem;color:var(--gray)}
 .fc-body{padding:1.2rem 1.5rem}
