@@ -239,7 +239,24 @@ main{padding-top:var(--nav-h);padding-bottom:calc(var(--bot-h) + .5rem)}
 .form-lbl{display:block;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray);margin-bottom:.4rem}
 .form-in{width:100%;padding:.9rem 1rem;border:1px solid var(--border);border-radius:6px;font-size:.9rem;background:#fff}
 .form-in:focus{outline:2px solid rgba(196,18,48,.15);border-color:var(--red)}
-.qd{background:#fff;border:1px solid var(--border);border-radius:10px;padding:1.2rem;margin-top:2rem}
+.qd{
+  position:relative;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:1.2rem;
+  margin-top:2rem;
+  overflow:hidden;
+}
+.qd::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url("../assets/images/\ insight.jpg") center 85%/70% no-repeat;
+  opacity:.22;
+  pointer-events:none;
+}
+.qd > *{position:relative}
 .qd-title{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:1rem}
 .qd-row{display:flex;gap:.8rem;margin-bottom:.8rem}
 .qd-ico{width:30px;height:30px;background:var(--red-pale);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.85rem}
@@ -310,7 +327,17 @@ main{padding-top:var(--nav-h);padding-bottom:calc(var(--bot-h) + .5rem)}
 .c-val{font-size:.9rem;font-weight:500;color:#1a1a1a}
 .c-sub{font-size:.78rem;color:var(--gray)}
 /* TODO: Replace campus image: assets/images/farm.jpg */
-.c-campus-img{width:100%;height:210px;border-radius:8px;object-fit:cover;background:url('../assets/images/\ insight.jpg') center/cover no-repeat;margin-top:2rem;display:block;filter:grayscale(30%)}
+.c-campus-img{
+  width:100%;
+  height:260px;
+  border-radius:0;
+  background:url('../assets/images/logo.png') center/contain no-repeat;
+  margin-top:2rem;
+  display:block;
+  filter:none;
+  mix-blend-mode:multiply;
+  opacity:.95;
+}
 
 /*  INSIGHTS PAGE  */
 .insights-hero{
