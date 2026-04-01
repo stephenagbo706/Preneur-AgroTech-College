@@ -1,5 +1,6 @@
 @media(max-width:1024px){
   .eco-grid,.diff-grid{grid-template-columns:repeat(2,1fr)}
+  .agro-grid,.phase-proof{grid-template-columns:1fr}
   .fg{grid-template-columns:1fr 1fr;gap:2rem}
   .two-col,.mv-grid,.insights-layout,.pdb-inner{grid-template-columns:1fr}
   .founder-grid{grid-template-columns:repeat(2,1fr)}
@@ -19,6 +20,8 @@
   .founder-grid{grid-template-columns:1fr}
   footer{padding-bottom:calc(var(--bot-h) + 1.5rem)}
   .hero-content{padding:2rem 1.5rem 4.5rem}
+  .st-inner{padding:1.35rem}
+  .l2b-caption{font-size:.63rem;line-height:1.7;padding:0 .35rem}
   .l2b-arr{display:none}
   .l2b-chain{gap:.2rem}
   .prog-grid{grid-template-columns:1fr}

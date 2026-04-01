@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1560" viewBox="0 0 720 1560" role="img" aria-labelledby="t d">
+  <title id="t">Full Circle L2B Vertical Diagram</title>
+  <desc id="d">A nine-stage learning-to-enterprise flow for PATC in vertical format.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10141f"/>
+      <stop offset="100%" stop-color="#1a2230"/>
+    </linearGradient>
+    <style>
+      .title{font:700 24px 'DM Sans',Arial,sans-serif;fill:#f8fafc;letter-spacing:.08em;text-transform:uppercase}
+      .node{fill:#f8fafc;stroke:#d7dce4;stroke-width:2}
+      .lbl{font:700 24px 'DM Sans',Arial,sans-serif;fill:#111827;letter-spacing:.02em}
+      .idx{font:700 15px 'DM Sans',Arial,sans-serif;fill:#7a8699;letter-spacing:.08em}
+      .arr{fill:#c41230;font:700 42px 'DM Sans',Arial,sans-serif}
+    </style>
+  </defs>
+  <rect x="0" y="0" width="720" height="1560" rx="20" fill="url(#bg)"/>
+  <text x="360" y="70" text-anchor="middle" class="title">Full Circle L2B</text>
+
+  <g transform="translate(160,120)"><rect class="node" x="0" y="0" width="400" height="108" rx="16"/><text x="200" y="44" text-anchor="middle" class="idx">01</text><text x="200" y="76" text-anchor="middle" class="lbl">Learning</text></g>
+  <text x="360" y="277" text-anchor="middle" class="arr">&#8595;</text>
+
+  <g transform="translate(160,310)"><rect class="node" x="0" y="0" width="400" height="108" rx="16"/><text x="200" y="44" text-anchor="middle" class="idx">02</text><text x="200" y="76" text-anchor="middle" class="lbl">Planting</text></g>
+  <text x="360" y="467" text-anchor="middle" class="arr">&#8595;</text>
+
+  <g transform="translate(160,500)"><rect class="node" x="0" y="0" width="400" height="108" rx="16"/><text x="200" y="44" text-anchor="middle" class="idx">03</text><text x="200" y="76" text-anchor="middle" class="lbl">Growing</text></g>
+  <text x="360" y="657" text-anchor="middle" class="arr">&#8595;</text>
+
+  <g transform="translate(160,690)"><rect class="node" x="0" y="0" width="400" height="108" rx="16"/><text x="200" y="44" text-anchor="middle" class="idx">04</text><text x="200" y="76" text-anchor="middle" class="lbl">Harvesting</text></g>
+  <text x="360" y="847" text-anchor="middle" class="arr">&#8595;</text>
+
+  <g transform="translate(160,880)"><rect class="node" x="0" y="0" width="400" height="108" rx="16"/><text x="200" y="44" text-anchor="middle" class="idx">05</text><text x="200" y="76" text-anchor="middle" class="lbl">Processing</text></g>
+  <text x="360" y="1037" text-anchor="middle" class="arr">&#8595;</text>
+
+  <g transform="translate(160,1070)"><rect class="node" x="0" y="0" width="400" height="108" rx="16"/><text x="200" y="44" text-anchor="middle" class="idx">06</text><text x="200" y="76" text-anchor="middle" class="lbl">Packaging</text></g>
+  <text x="360" y="1227" text-anchor="middle" class="arr">&#8595;</text>
+
+  <g transform="translate(160,1260)"><rect class="node" x="0" y="0" width="400" height="108" rx="16"/><text x="200" y="44" text-anchor="middle" class="idx">07</text><text x="200" y="76" text-anchor="middle" class="lbl">Branding</text></g>
+
+  <g transform="translate(30,1422)"><rect class="node" x="0" y="0" width="320" height="100" rx="16"/><text x="160" y="40" text-anchor="middle" class="idx">08</text><text x="160" y="70" text-anchor="middle" class="lbl">Selling</text></g>
+  <g transform="translate(370,1422)"><rect class="node" x="0" y="0" width="320" height="100" rx="16"/><text x="160" y="40" text-anchor="middle" class="idx">09</text><text x="160" y="70" text-anchor="middle" class="lbl">Scaling</text></g>
+</svg>
