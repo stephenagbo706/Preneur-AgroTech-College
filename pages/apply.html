@@ -17,12 +17,12 @@
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/responsive.css">
 </head>
-<body data-root=".." data-page="apply">
+<body data-root=".." data-page="apply" data-sheet-webhook="https://script.google.com/macros/s/AKfycbx8DERmp9XrBRzdTEq2JwcHotTLOtyfk16rk81bf_fMOj_onvIQu-pC0JDyk5EISm5cBw/exec">
   <div id="site-header"></div>
   <div id="site-menu"></div>
 
   <main class="apply-page">
-    <!-- TODO: Update form fields, dates, and submission flow -->
+    <!-- TODO: Set data-sheet-webhook on <body> to your Google Apps Script Web App URL -->
     <div style="background:#fff;border-bottom:1px solid var(--border);padding:.9rem 1.5rem;display:flex;align-items:center;justify-content:center;position:relative">
       <a class="apply-back" data-link="index.html">←</a>
       <div style="text-align:center">
@@ -119,7 +119,7 @@
           <!-- TODO: Update enrollment terms and privacy policy links -->
           <p>I certify that all information provided is accurate and I agree to the <a href="#">PATC Enrollment Terms</a> and <a href="#">Privacy Policy</a>.</p>
         </div>
-        <a class="btn btn-red btn-full btn-lg" href="#" onclick="submitApply();return false">Submit Application →</a>
+        <a class="btn btn-red btn-full btn-lg" id="apply-submit-btn" href="#" onclick="submitApply();return false">Submit Application →</a>
         <div class="what-next" style="margin-top:1.5rem">
           <div class="wn-title"><strong>What Happens Next?</strong></div>
           <div class="wn-item"><div class="wn-num">1</div><p>Your application will be reviewed by our admissions panel within 5–7 business days.</p></div>
